@@ -1,7 +1,7 @@
 services:
-  server:
-    build:
-      context: .
+  chat-app:
+    image: "alchamystrepo/chat-app:latest
+    restart: always
     environment:
       NODE_ENV: production
       PORT: 5000
