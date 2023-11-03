@@ -1,6 +1,6 @@
 services:
   chat-app:
-    image: "alchamystrepo/chat-app:latest
+    image: "alchamystrepo/chat-app:latest"
     restart: always
     environment:
       NODE_ENV: production
