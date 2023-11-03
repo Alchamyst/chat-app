@@ -1,9 +1,9 @@
 services:
   chat-app:
-    image: "alchamystrepo/chat-app:latest
+    image: "alchamystrepo/chat-app:latest"
     restart: always
     environment:
       NODE_ENV: production
-      PORT: 5001
+      PORT: 5000
     ports:
-      - 5001:5001
+      - 5000:5000
