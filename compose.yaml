@@ -1,6 +1,6 @@
 services:
   chat-app:
-    image: "chat-app"
+    image: "docker.alchamyst.com/chat-app:production"
     restart: always
     environment:
       NODE_ENV: production
