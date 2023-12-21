@@ -1,9 +1,0 @@
-services:
-  chat-app:
-    image: "docker.alchamyst.com/chat-app:production"
-    restart: always
-    environment:
-      NODE_ENV: production
-      PORT: 5000
-    ports:
-      - 5000:5000

@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+
+  backend:
+    container_name: chatapp-backend
+    restart: always
+    build: 
+      context: .
+      dockerfile: ./docker/backend/Dockerfile
+    environment:
+      - NODE_ENV=production
+
+  nginx-proxy:
+    container_name: chatapp-proxy
+    restart: always
+    build: 
+      context: .
+      dockerfile: ./docker/proxy/Dockerfile
+    ports:
+      - "8080:8080"
